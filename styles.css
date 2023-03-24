@@ -5,8 +5,17 @@ body {
   padding: 0;
 }
 
-/* ヘッダー */
+/* ヘッダー1 */
 h1 {
+  background-color: #ff9900;
+  color: #fff;
+  font-size: 32px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+/* ヘッダー2 */
+h2 {
   background-color: #ff9900;
   color: #fff;
   font-size: 32px;
