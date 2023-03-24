@@ -14,13 +14,20 @@ h1 {
   padding: 20px;
   text-align: center;
 }
-
+/* 動画のセル */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 /* 動画のセル */
 .video-cell {
   margin: 5px;
   position: relative;
   width: 250px;
   height: 150px;
+  text-align: center;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
