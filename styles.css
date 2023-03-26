@@ -17,8 +17,6 @@ h1 {
 }
 /* ヘッダー2 */
 h2 {
-  background: linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
-  color: #fff;
   font-size: 32px;
   margin: 0;
   padding: 20px;
