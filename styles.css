@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
 }
 
 /* ヘッダー1 */
