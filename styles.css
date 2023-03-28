@@ -126,4 +126,5 @@ li a:hover {
 /* footer用 */
 footer p {
   color: yellow;
+  text-align: center;
 }
