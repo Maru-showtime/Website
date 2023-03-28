@@ -10,7 +10,7 @@ body {
 h1 {
   font-family: Noto Sans JP, Arial, sans-serif;
   color: #FF0;
-  font-size: 64px;
+  font-size: px;
   margin: 0;
   padding: 20px;
   /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
