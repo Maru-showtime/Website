@@ -23,6 +23,14 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+/* twitter用ヘッダー */
+h3 {
+  font-size: 32px;
+  color: #0000FF;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
 /* 動画のセル */
 .video-wrapper {
   display: flex;
