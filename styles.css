@@ -8,6 +8,7 @@ body {
 
 /* ヘッダー1 */
 h1 {
+  font-family: Noto Sans JP, Arial, sans-serif;
   background-color: #ff9900;
   color: #fff;
   font-size: 32px;
