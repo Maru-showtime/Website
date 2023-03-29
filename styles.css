@@ -24,10 +24,15 @@ h1 {
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
-  color: #fff;
+  color: #FF0;
+  /*改行したときに文字間が空きすぎないように調節する*/
+  line-height: 1;
   margin: 0;
   padding: 20px;
-  text-align: center;
+  /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 /* twitter用ヘッダー */
 h3 {
