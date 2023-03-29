@@ -1,6 +1,6 @@
 /* 全体のスタイル */
 body {
-  font-family: Noto Sans JP, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -8,7 +8,7 @@ body {
 
 /* ヘッダー1 */
 h1 {
-  font-family: Noto Sans JP, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #FF0;
   font-size: 86px;
   margin: 0;
@@ -20,7 +20,7 @@ h1 {
 }
 /* ヘッダー2 */
 h2 {
-  font-family: Noto Sans JP, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 32px;
   color: #fff;
   margin: 0;
@@ -29,7 +29,7 @@ h2 {
 }
 /* twitter用ヘッダー */
 h3 {
-  font-family: Noto Sans JP, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 32px;
   color: #FFF;
   margin: 0;
@@ -130,7 +130,7 @@ li a:hover {
 
 /* footer用 */
 footer p {
-  font-family: Noto Sans JP, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: yellow;
   text-align: center;
 }
