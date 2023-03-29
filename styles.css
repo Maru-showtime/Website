@@ -12,7 +12,7 @@ h1 {
   color: #FF0;
   /*改行したときに文字間が空きすぎないように調節する*/
   line-height: 1;
-  font-size: 86px;
+  font-size: 128px;
   margin: 0;
   padding: 20px;
   /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
