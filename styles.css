@@ -11,7 +11,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
   color: #FF0;
   font-size: 86px;
-  margin: -0.3em 0;
+  margin: -1em 0;
   padding: 20px;
   /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
   display: flex;
