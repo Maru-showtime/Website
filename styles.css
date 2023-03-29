@@ -10,6 +10,7 @@ body {
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #FF0;
+  /*改行したときに文字間が空きすぎないように調節する*/
   line-height: 1;
   font-size: 86px;
   margin: 0;
