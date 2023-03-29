@@ -61,6 +61,7 @@ h3 {
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
+  /*フレームの周囲にシャドウ効果*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   flex: 0 0 auto;
   margin-right: 10px;
