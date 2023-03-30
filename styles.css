@@ -99,12 +99,6 @@ h3 {
   box-sizing: border-box;
 }
 
-/* 動画のタイトルを下方向にスライド */
-.video-cell:hover a {
-  bottom: -40px;
-  transition: bottom 0.3s ease-in-out;
-}
-
 /* カテゴリリスト */
 ul {
   margin: 0;
