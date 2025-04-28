@@ -135,3 +135,16 @@ footer p {
   color: yellow;
   text-align: center;
 }
+
+/* トップページのメイン画像用 */
+/* マウスホバー時に自然に拡大するようアニメーションを設定する */
+.video-wrapper > a > img {
+  transition: transform 0.5s ease; /* 拡大するときに0.5秒かけてなめらかに動かす */
+  transform-origin: center center; /* 拡大の中心を画像の真ん中に設定する */
+}
+
+/* トップページのメイン画像用 */
+/* マウスを乗せたときに画像を5%だけ拡大する */
+.video-wrapper > a:hover > img {
+  transform: scale(1.05); /* 元サイズの1.05倍に拡大する */
+}
