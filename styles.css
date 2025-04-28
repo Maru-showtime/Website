@@ -79,6 +79,12 @@ h3 {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
+  transition: transform 0.5s ease; /* ←追加：枠ごと拡大に対応 */
+}
+
+/* サムネイルの枠ごと拡大 */
+.video-cell:hover {
+  transform: scale(1.05);
 }
 
 .video-cell img {
@@ -86,12 +92,6 @@ h3 {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
-}
-
-/* サムネイルホバー拡大 */
-.video-cell:hover img {
-  transform: scale(1.05);
 }
 
 /* カテゴリリスト */
