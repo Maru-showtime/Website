@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  overflow-x: hidden; /* 追加：ページ全体で横スクロール禁止 */
+  overflow-x: hidden;
 }
 
 /* ヘッダー1 */
@@ -43,74 +43,57 @@ h3 {
   text-align: center;
 }
 
-/* トップページのメイン画像用 */
-.video-wrapper {
+/* トップ画像（メインビジュアル用） */
+.main-visual-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  overflow-x: hidden; /* 修正：横スクロールを絶対に出さない */
-  white-space: normal; /* 修正：nowrapを解除して折り返し可能にする */
-  gap: 10px; /* セル同士の間隔を設定 */
-  padding: 10px;
+  padding: 20px;
 }
 
-.video-wrapper > a > img {
-  transition: transform 0.5s ease;
-  transform-origin: center center;
+.main-visual-wrapper img {
   max-width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.5s ease;
 }
 
-/* トップページのメイン画像用（ホバー時拡大） */
-.video-wrapper > a:hover > img {
+.main-visual-wrapper a:hover img {
   transform: scale(1.05);
 }
 
-/* 動画のセル */
+/* Past Videos のサムネイルエリア */
+.video-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列グリッド */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 動画のサムネイル画像 */
 .video-cell {
-  margin: 5px;
+  margin: auto;
   position: relative;
-  width: 250px;
-  height: 150px;
+  width: 90%;
+  max-width: 400px;
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  flex: 0 0 auto;
 }
 
-/* 動画のサムネイル画像 */
 .video-cell img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 /* 動画のサムネイル画像を拡大表示 */
 .video-cell:hover img {
-  transform: scale(1.2, 1.2);
-}
-
-/* 動画のタイトル */
-.video-cell a {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
+  transform: scale(1.05);
 }
 
 /* カテゴリリスト */
