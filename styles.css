@@ -62,36 +62,33 @@ h3 {
   transform: scale(1.05);
 }
 
-/* Past Videos のサムネイルエリア */
+/* PAST VIDEOS のグリッド */
 .video-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2列グリッド */
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 20px; /* カード間スペース */
   padding: 20px;
 }
 
-/* 動画のサムネイル画像 */
+/* 各動画サムネイル */
 .video-cell {
-  margin: auto;
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
+  width: 100%;
+  aspect-ratio: 16/9; /* 横長比率を保つ */
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .video-cell img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.5s ease;
 }
 
-/* 動画のサムネイル画像を拡大表示 */
+/* サムネイルホバー拡大 */
 .video-cell:hover img {
   transform: scale(1.05);
 }
