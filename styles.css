@@ -4,36 +4,35 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+  overflow-x: hidden; /* 追加：ページ全体で横スクロール禁止 */
 }
 
 /* ヘッダー1 */
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #FF0;
-  /*改行したときに文字間が空きすぎないように調節する*/
   line-height: 1;
   font-size: 128px;
   margin: 0;
   padding: 20px;
-  /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
   display: flex;
   justify-content: center;
   text-align: left;
 }
+
 /* ヘッダー2 */
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   color: #FF0;
-  /*改行したときに文字間が空きすぎないように調節する*/
   line-height: 1;
   margin: 0;
   padding: 20px;
-  /* 親要素をFlexコンテナとして扱い、内部の要素を配置します。 */
   display: flex;
   justify-content: center;
   text-align: left;
 }
+
 /* twitter用ヘッダー */
 h3 {
   font-family: 'Oswald', sans-serif;
@@ -43,15 +42,32 @@ h3 {
   padding: 20px;
   text-align: center;
 }
-/* 動画のセル */
+
+/* トップページのメイン画像用 */
 .video-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow-x: auto;
-  white-space: nowrap;
+  overflow-x: hidden; /* 修正：横スクロールを絶対に出さない */
+  white-space: normal; /* 修正：nowrapを解除して折り返し可能にする */
+  gap: 10px; /* セル同士の間隔を設定 */
+  padding: 10px;
 }
+
+.video-wrapper > a > img {
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* トップページのメイン画像用（ホバー時拡大） */
+.video-wrapper > a:hover > img {
+  transform: scale(1.05);
+}
+
 /* 動画のセル */
 .video-cell {
   margin: 5px;
@@ -61,10 +77,8 @@ h3 {
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
-  /*フレームの周囲にシャドウ効果*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   flex: 0 0 auto;
-  margin-right: 10px;
 }
 
 /* 動画のサムネイル画像 */
@@ -79,7 +93,7 @@ h3 {
 
 /* 動画のサムネイル画像を拡大表示 */
 .video-cell:hover img {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
 
 /* 動画のタイトル */
@@ -134,17 +148,4 @@ footer p {
   font-family: 'Oswald', sans-serif;
   color: yellow;
   text-align: center;
-}
-
-/* トップページのメイン画像用 */
-/* マウスホバー時に自然に拡大するようアニメーションを設定する */
-.video-wrapper > a > img {
-  transition: transform 0.5s ease; /* 拡大するときに0.5秒かけてなめらかに動かす */
-  transform-origin: center center; /* 拡大の中心を画像の真ん中に設定する */
-}
-
-/* トップページのメイン画像用 */
-/* マウスを乗せたときに画像を5%だけ拡大する */
-.video-wrapper > a:hover > img {
-  transform: scale(1.05); /* 元サイズの1.05倍に拡大する */
 }
