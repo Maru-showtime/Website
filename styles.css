@@ -65,15 +65,16 @@ h3 {
 /* PAST VIDEOS のグリッド */
 .video-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2列 */
-  gap: 20px; /* カード間スペース */
+  grid-template-columns: repeat(2, 300px); /* 2列、各300px */
+  justify-content: center; /* 中央寄せ */
+  gap: 40px; /* 間隔広めに */
   padding: 20px;
 }
 
 /* 各動画サムネイル */
 .video-cell {
   width: 100%;
-  aspect-ratio: 16/9; /* 横長比率を保つ */
+  aspect-ratio: 2/3; /* 縦長2:3比率 */
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
